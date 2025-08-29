@@ -1,0 +1,106 @@
+
+.App {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+}
+ 
+.tabs{
+  display : flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+button {
+  
+  background-color: #f0f0f0;
+  border: none;
+  padding: 12px 20px;
+  margin: 8px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #357ABD;
+  color: #f0f0f0;
+  transform: translateY(-2px);
+}
+
+button:active {
+  background: #357ABD;
+  transform: translateY(1px);
+}
+
+input{
+  padding: 10px;
+  width : calc(100%-22px);
+  margin-bottom: border-box;
+}
+.tab-content{
+  margin-top : 100px;
+  
+  align-items: center;
+  text-align: center;
+}
+
+.image-grid{
+  display:grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+img{
+  width: 100%;
+  height: auto;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+.empty-image-slot{
+  width: 100%;
+  height: 0;
+  padding-bottom: 75%;
+   border: 2px dashed #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.output{
+  margin-top: 20px;
+  text-align: left;
+  background-color: #f4f4f4;
+  padding:10px;
+  border-radius:5px;
+}
+
+h2 {
+  margin-top: 30px;
+  font-size: 24px;
+  color: #333;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+
+.recipe-text{
+  max-width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  overflow-y: auto;
+  font-size: calc(12px +0.5vw);
+  line-height: 1.6;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
