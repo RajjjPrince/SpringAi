@@ -10,8 +10,6 @@ import java.util.Map;
 @Service
 public class RecipeService {
     private final ChatModel chatModel;
-
-
     public RecipeService(ChatModel chatModel) {
         this.chatModel = chatModel;
     }
